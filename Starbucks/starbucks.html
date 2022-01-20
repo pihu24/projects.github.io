@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="starbucks.css" type="text/css"></link>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">  <title>Starbucks|Home</title>
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#"><img src="logo.png" class="logo"></img></a>
+      <ul class="nav">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Menu</a></li>
+             <li><a href="#">What's New?</a></li>
+             <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="text">
+        <h2>It's not just coffee<br>It's <span>Starbucks</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="images">
+        <img src="img1.png" class="starbucks"></img>
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="thumb1.png" onclick="change('img1.png');color('green')"</li>
+      <li><img src="thumb2.png" onclick="change('img2.png');color('pink')"</li>
+      <li><img src="thumb3.png" onclick="change('img3.png');color('purple')"</li>
+    </ul>
+    <ul class="social">
+      <li><img src="facebook.png"</img></li>
+      <li><img src="instagram.png"></img></li>
+      <li><img src="twitter.png"></img></li>
+    </ul>
+  </section>
+
+  <script type="text/javascript">
+    function change(anything){
+       document.querySelector('.starbucks').src= anything;
+
+    }
+    function color(anycolor){
+      const circle=document.querySelector('.circle');
+      circle.style.background= anycolor;
+    }
+
+  </script>
+</body>
+</html>
